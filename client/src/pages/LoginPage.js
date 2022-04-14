@@ -33,7 +33,7 @@ function LoginPage() {
             <input
               id="password"
               name="password"
-              type="text"
+              type="password"
               placeholder="Enter password here"
               onChange={(event) => {
                 setPassword(event.target.value);

@@ -181,20 +181,26 @@ label {
 }
 
 .post-form,
-.login-form {
+.login-form,
+.register-form {
   border: 5px solid var(--secondary-color);
   padding: 30px;
   margin: 30px 0;
   background: var(--highlight-color);
 }
 
-.login-form-container {
+.login-form-container,
+.register-form-container {
   display: flex;
   justify-content: center;
 }
 
 .login-form {
   width: 50%;
+}
+
+.register-form {
+  width: 60%;
 }
 
 form h1 {
