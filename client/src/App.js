@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import CreatePostPage from "./pages/CreatePostPage";
 import ViewPostPage from "./pages/ViewPostPage";
 import EditPostPage from "./pages/EditPostPage";
-
+import LoginPage from "./pages/LoginPage";
 import "./App.css";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/post/create" element={<CreatePostPage />} />
           <Route path="/post/view/:postId" element={<ViewPostPage />} />
           <Route path="/post/edit/:postId" element={<EditPostPage />} />

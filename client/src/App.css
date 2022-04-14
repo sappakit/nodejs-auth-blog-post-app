@@ -180,11 +180,21 @@ label {
   font-size: 40px;
 }
 
-.post-form {
+.post-form,
+.login-form {
   border: 5px solid var(--secondary-color);
   padding: 30px;
   margin: 30px 0;
   background: var(--highlight-color);
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  width: 50%;
 }
 
 form h1 {
