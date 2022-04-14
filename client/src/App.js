@@ -5,7 +5,7 @@ import UnauthenticatedApp from "./pages/UnauthenticatedApp";
 
 function App() {
   const auth = useAuth();
-  return auth.state.user ? <AuthenticatedApp /> : <UnauthenticatedApp />;
+  return auth.isAuthenticated ? <AuthenticatedApp /> : <UnauthenticatedApp />;
 }
 
 export default App;

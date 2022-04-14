@@ -18,8 +18,12 @@ function AuthProvider(props) {
   // clear the token in localStorage and the user data
   const logout = () => {};
 
+  const isAuthenticated = Boolean(localStorage.getItem("token"));
+
   return (
-    <AuthContext.Provider value={{ state, login, logout, register }}>
+    <AuthContext.Provider
+      value={{ state, login, logout, register, isAuthenticated }}
+    >
       {props.children}
     </AuthContext.Provider>
   );
