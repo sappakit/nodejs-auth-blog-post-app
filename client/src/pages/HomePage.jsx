@@ -12,8 +12,6 @@ function HomePage() {
   const { posts, totalPages, getPosts, deletePost, isError, isLoading } =
     usePosts();
 
-  console.log(totalPages);
-
   useEffect(() => {
     getPosts({ status, keywords, page });
   }, [status, keywords, page]);
@@ -29,6 +27,11 @@ function HomePage() {
         >
           Create Post
         </button>
+        {/* 
+           // 🐨 Todo: Exercise #7
+          //  นำ Function `logout` จาก AuthContext มา Execute ใน Prop `onClick`
+        */}
+        <button>Logout</button>
       </div>
       <div className="search-box-container">
         <div className="search-box">

@@ -4,6 +4,9 @@ import { db } from "../utils/db.js";
 
 const postRouter = Router();
 
+// 🐨 Todo: Exercise #5
+// นำ Middleware `protect` มาใช้กับ `postRouter` ด้วย Function `app.use`
+
 postRouter.get("/", async (req, res) => {
   const status = req.query.status;
   const keywords = req.query.keywords;
