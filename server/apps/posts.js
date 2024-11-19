@@ -2,6 +2,8 @@ import { ObjectId } from "mongodb";
 import { Router } from "express";
 import { db } from "../utils/db.js";
 
+import { protect } from "../middlewares/protect.js";
+postRouter.use(protect);
 const postRouter = Router();
 
 // 🐨 Todo: Exercise #5
